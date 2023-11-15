@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <nav className="font-normal flex justify-between mb-[24px]">
         <div className="text-lg">
-          <a href="/">Hritik khadka</a>
+          <a href="/">Hritik Khadka</a>
         </div>
         <div className="flex space-x-2">
           <a href="/" className="text-lg">
