@@ -12,7 +12,7 @@ const projects = [
     title: "Portfolio",
     description:
       "My personal portoflio built using react and tailwind css demonstrating my projects and skills.",
-    image: "/images/hrithikhadka.png",
+    image: "/images/hrithikhadka.PNG",
     link: "https://github.com/hrithikhadka/react-portfolio",
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     title: "Full Stack Open",
     description:
       "My submission for Full Stack Open exercises will be uploaded here. Check for updates on my progress.",
-    image: "/images/fullstackopen.png",
+    image: "/images/fullstackopen.PNG",
     link: "https://github.com/hrithikhadka/FullStack-Open",
   },
 ];
