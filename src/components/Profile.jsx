@@ -1,4 +1,3 @@
-import { BsArrowRight } from "react-icons/bs";
 const Profile = () => {
   return (
     <div className="flex justify-between items-center">
@@ -14,9 +13,8 @@ const Profile = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Resume
+            Resume →
           </a>
-          <BsArrowRight className="sm:text-2xl mt-1 ml-1.5" />
         </p>
       </section>
     </div>

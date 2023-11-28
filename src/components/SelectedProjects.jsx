@@ -1,5 +1,3 @@
-import { BsArrowUpRight } from "react-icons/bs";
-import { BsArrowRight } from "react-icons/bs";
 import projects from "../projectData";
 
 const Project = ({ title, description, image, link }) => {
@@ -12,8 +10,7 @@ const Project = ({ title, description, image, link }) => {
           <h1 className="font-bold md:text-xl mb-2 mt-2">{title}</h1>
           <p>{description}</p>
           <div className="flex items-center gap-1 my-2.5 cursor-pointer">
-            <p>Preview</p>
-            <BsArrowUpRight />
+            <p>Read more →</p>
           </div>
         </div>
       </div>
@@ -34,8 +31,7 @@ const SelectedProjects = () => {
           className="rounded-md"
         />
         <div className="flex items-center gap-1 mt-3">
-          <h1 className="sm:text-xl cursor-pointer">Blog Application</h1>
-          <BsArrowUpRight className="cursor-pointer text-xl" />
+          <h1 className="sm:text-xl cursor-pointer">Blog Application →</h1>
         </div>
       </figure>
 
@@ -47,9 +43,8 @@ const SelectedProjects = () => {
 
       <div className="flex items-center">
         <h2 className="sm:text-[24px] max-sm:text-[19px] my-[20px]">
-          View all Work
+          View all Work →
         </h2>
-        <BsArrowRight className="text-2xl mt-1 ml-2" />
       </div>
     </div>
   );
