@@ -10,7 +10,11 @@ const Project = ({ title, description, image, link }) => {
           <h1 className="font-bold md:text-xl mb-2 mt-2">{title}</h1>
           <p>{description}</p>
           <div className="flex items-center gap-1 my-2.5 cursor-pointer">
-            <p>Read more →</p>
+            <a href={link} target="_blank" rel="noreferrer">
+              <p>
+                Read more <span className="max-sm:text-xl">→</span>
+              </p>
+            </a>
           </div>
         </div>
       </div>
@@ -31,7 +35,15 @@ const SelectedProjects = () => {
           className="rounded-md"
         />
         <div className="flex items-center gap-1 mt-3">
-          <h1 className="sm:text-xl cursor-pointer">Blog Application →</h1>
+          <h1 className="sm:text-xl cursor-pointer">
+            <a
+              href="https://github.com/hrithikhadka/mern-blog"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Blog Application <span className="max-sm:text-xl">→</span>
+            </a>
+          </h1>
         </div>
       </figure>
 
@@ -42,9 +54,15 @@ const SelectedProjects = () => {
       </div>
 
       <div className="flex items-center">
-        <h2 className="sm:text-[24px] max-sm:text-[19px] my-[20px]">
-          View all Work →
-        </h2>
+        <a
+          href="https://github.com/hrithikhadka?tab=repositories"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <h2 className="sm:text-[24px] max-sm:text-[19px] my-[20px]">
+            View all Work <span className="max-sm:text-xl">→</span>
+          </h2>
+        </a>
       </div>
     </div>
   );

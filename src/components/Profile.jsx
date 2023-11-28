@@ -13,7 +13,7 @@ const Profile = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Resume →
+            Resume <span className="max-sm:text-xl">→</span>
           </a>
         </p>
       </section>
