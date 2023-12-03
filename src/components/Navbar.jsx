@@ -1,6 +1,8 @@
 import { MdOutlineLightMode } from "react-icons/md";
+import { FaMoon } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ onThemeSwitch, theme }) => {
+  const isDarkMode = theme === "dark";
   return (
     <>
       <nav className="font-normal flex justify-between mb-[24px]">
@@ -16,8 +18,17 @@ const Navbar = () => {
             Work
           </a>
 
-          <div className=" bg-[#e6e6e6] p-[6px] rounded-[4px]">
-            <MdOutlineLightMode className="sm:text-2xl cursor-pointer" />
+          <div
+            className={`bg-${
+              isDarkMode ? "" : "[#e6e6e6]"
+            } p-[6px] rounded-[4px]`}
+            onClick={onThemeSwitch}
+          >
+            {isDarkMode ? (
+              <FaMoon className="sm:text-2xl cursor-pointer" />
+            ) : (
+              <MdOutlineLightMode className="sm:text-2xl cursor-pointer" />
+            )}
           </div>
         </div>
       </nav>
