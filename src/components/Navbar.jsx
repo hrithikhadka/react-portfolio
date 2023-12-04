@@ -19,9 +19,9 @@ const Navbar = ({ onThemeSwitch, theme }) => {
           </a>
 
           <div
-            className={`bg-${
-              isDarkMode ? "" : "[#e6e6e6]"
-            } p-[6px] rounded-[4px]`}
+            className={`p-[6px] rounded-[4px] ${
+              isDarkMode ? "" : "bg-[#e6e6e6]"
+            }`}
             onClick={onThemeSwitch}
           >
             {isDarkMode ? (
