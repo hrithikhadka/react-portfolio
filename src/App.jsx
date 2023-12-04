@@ -5,10 +5,14 @@ import Contact from "./components/Contact";
 import SelectedProjects from "./components/SelectedProjects";
 
 function App() {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    const userPreferredTheme = "light";
+    const userPreferredTheme =
+      localStorage.getItem("theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light");
     setTheme(userPreferredTheme);
   }, []);
 
@@ -23,6 +27,7 @@ function App() {
   const handleThemeSwitch = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
+    localStorage.setItem("theme", newTheme); // Store the theme preference in localStorage
   };
 
   return (
