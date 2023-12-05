@@ -22,7 +22,8 @@ const Project = ({ title, description, image, link }) => {
   );
 };
 
-const SelectedProjects = () => {
+const SelectedProjects = ({ theme }) => {
+  const textColorClass = theme === "dark" ? "text-black" : "text-[#161E40]";
   return (
     <div>
       <h2 className="sm:text-[24px] max-sm:text-[19px] my-[20px]">
@@ -47,7 +48,9 @@ const SelectedProjects = () => {
         </div>
       </figure>
 
-      <div className="grid sm:grid-cols-1 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 gap-6 md:gap-8 lg:gap-10 mt-5">
+      <div
+        className={`grid sm:grid-cols-1 lg:grid-cols-2  md:grid-cols-2 grid-cols-1 gap-6 md:gap-8 lg:gap-10 mt-5 ${textColorClass}`}
+      >
         {projects.map((project, index) => (
           <Project key={index} {...project} />
         ))}
