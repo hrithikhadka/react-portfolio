@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Element } from "react-scroll";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import Contact from "./components/Contact";
@@ -42,8 +43,12 @@ function App() {
         }`}
       >
         <Navbar onThemeSwitch={handleThemeSwitch} theme={theme} />
-        <Profile theme={theme} />
-        <SelectedProjects theme={theme} />
+        <Element name="about">
+          <Profile theme={theme} />
+        </Element>
+        <Element name="work">
+          <SelectedProjects theme={theme} />
+        </Element>
         <Contact />
       </div>
     </div>
