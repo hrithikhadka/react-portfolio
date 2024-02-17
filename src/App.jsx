@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import Contact from "./components/Contact";
 import SelectedProjects from "./components/SelectedProjects";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -50,6 +51,7 @@ function App() {
           <SelectedProjects theme={theme} />
         </Element>
         <Contact />
+        <Analytics />
       </div>
     </div>
   );
