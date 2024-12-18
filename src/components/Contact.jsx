@@ -27,7 +27,7 @@ const Contact = () => {
           </a>
         </span>{" "}
         or send an email to {""}
-        <span className="text-pink-500">hrithikhadka00@gmail.com</span>
+        <span className="text-pink-500">hritik.khadka@outlook.com</span>
       </p>
     </div>
   );
